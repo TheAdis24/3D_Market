@@ -1,0 +1,151 @@
+/* --- ZÁKLAD STRÁNKY --- */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    /* Zajištění patičky dole (Flexbox) */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+    /* Natáhne hlavní obsah a odtlačí patičku úplně na dno */
+    flex: 1;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* --- HLAVIČKA A NAVIGACE (DESKTOP) --- */
+header {
+    background-color: #2c3e50;
+    color: #ffffff;
+    padding: 15px 40px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+.hlavni-lista {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.logo-odkaz {
+    color: #ffffff;
+    text-decoration: none;
+}
+.logo-odkaz h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+.navigace-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.navigace-menu a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+.navigace-menu a:hover {
+    color: #3498db;
+}
+
+/* --- ROZBALOVACÍ MENU --- */
+.dropdown { position: relative; }
+.dropdown-obsah {
+    display: none; position: absolute; top: 100%; left: 0;
+    background-color: #ffffff; min-width: 180px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2); border-radius: 8px; z-index: 100;
+}
+.dropdown-obsah a { color: #333333; padding: 12px 16px; display: block; font-weight: normal; transition: background-color 0.2s ease;}
+.dropdown-obsah a:hover { background-color: #f1f1f1; color: #2c3e50; }
+.dropdown:hover .dropdown-obsah { display: block; }
+
+/* --- HORIZONTÁLNÍ LIŠTA KATEGORIÍ (Pill Navigation) --- */
+.kategorie-bar {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding: 10px 0 20px 0;
+    scrollbar-width: none; /* Schová posuvník ve Firefoxu */
+}
+.kategorie-bar::-webkit-scrollbar {
+    display: none; /* Schová posuvník v Chrome/Safari */
+}
+.kategorie-bar a {
+    background-color: #ecf0f1;
+    color: #2c3e50;
+    padding: 8px 18px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: bold;
+    white-space: nowrap; /* Zabrání zalomení textu pod sebe */
+    transition: all 0.3s ease;
+}
+.kategorie-bar a:hover {
+    background-color: #bdc3c7;
+}
+.kategorie-bar a.aktivni {
+    background-color: #2c3e50;
+    color: white;
+}
+
+/* --- TLAČÍTKA --- */
+.hlavni-tlacitko {
+    background-color: #e67e22;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    display: inline-block;
+}
+.hlavni-tlacitko:hover { background-color: #d35400; }
+
+/* --- VYHLEDÁVAČ A FILTRY --- */
+.vyhledavac-box { margin: 20px 0; }
+.vyhledavac-box input[type="search"] { padding: 10px; width: 300px; border: 1px solid #ccc; border-radius: 4px; }
+.vyhledavac-box button { padding: 10px 20px; background-color: #2c3e50; color: white; border: none; border-radius: 4px; cursor: pointer; transition: background-color 0.3s; }
+.vyhledavac-box button:hover { background-color: #34495e; }
+.filtry-box { background-color: #ecf0f1; padding: 15px; margin-bottom: 20px; border-radius: 5px; text-align: right; }
+.filtry-box select { padding: 8px; font-size: 1rem; border-radius: 4px; border: 1px solid #ccc; }
+
+/* --- MODERNÍ MŘÍŽKA MODELŮ --- */
+.modely-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 30px; padding: 20px 0; }
+.model-karta { background: #ffffff; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); border-radius: 12px; padding: 20px; text-align: center; transition: all 0.3s ease; }
+.model-karta:hover { transform: translateY(-10px); box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15); }
+.model-karta img { max-width: 100%; border-radius: 8px; margin-bottom: 15px; }
+.model-karta h2 { font-size: 1.3rem; margin: 10px 0; color: #2c3e50; font-weight: 600; }
+.model-karta p { color: #7f8c8d; font-size: 0.9rem; margin-bottom: 20px; }
+
+/* --- PATIČKA --- */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    width: 100%;
+}
+
+/* --- MOBILY --- */
+@media (max-width: 768px) {
+    .hlavni-lista { flex-direction: column; text-align: center; }
+    .navigace-menu { flex-direction: column; gap: 15px; margin-top: 15px; }
+    .vyhledavac-box input[type="search"] { width: 100%; margin-bottom: 10px; }
+    .filtry-box { text-align: center; }
+}
