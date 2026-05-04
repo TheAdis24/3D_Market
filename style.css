@@ -131,7 +131,7 @@ header {
 .model-karta:hover { transform: translateY(-10px); box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15); }
 .model-karta img { max-width: 100%; border-radius: 8px; margin-bottom: 15px; }
 .model-karta h2 { font-size: 1.3rem; margin: 10px 0; color: #2c3e50; font-weight: 600; }
-.model-karta p { color: #7f8c8d; font-size: 0.9rem; margin-bottom: 20px; }
+.model-karta p { color: #555555; font-size: 0.9rem; margin-bottom: 20px; }
 
 /* --- SOCIÁLNÍ MEDIA IKONY --- */
 .socialni-ikona {
