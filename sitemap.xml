@@ -1,57 +1,95 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <!-- Hlavní stránka má nejvyšší prioritu 1.0 -->
+
     <url>
-        <loc>https://theadis24.github.io/3D_Market/index.html</loc>
+        <loc>https://theadis24.github.io/3D_Market/</loc>
+        <lastmod>2026-05-05</lastmod>
+        <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
-    <!-- Ostatní podstránky mají prioritu 0.8 -->
+
     <url>
         <loc>https://theadis24.github.io/3D_Market/3DPrinting.html</loc>
+        <lastmod>2026-05-05</lastmod>
+        <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
+
     <url>
         <loc>https://theadis24.github.io/3D_Market/Art.html</loc>
+        <lastmod>2026-05-05</lastmod>
+        <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
+
     <url>
         <loc>https://theadis24.github.io/3D_Market/Community.html</loc>
-        <priority>0.8</priority>
+        <lastmod>2026-05-05</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
     </url>
+
     <url>
         <loc>https://theadis24.github.io/3D_Market/Fashion.html</loc>
+        <lastmod>2026-05-05</lastmod>
+        <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
+
     <url>
         <loc>https://theadis24.github.io/3D_Market/Gadgets.html</loc>
+        <lastmod>2026-05-05</lastmod>
+        <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
+
     <url>
         <loc>https://theadis24.github.io/3D_Market/Hobby.html</loc>
-        <priority>0.8</priority>
+        <lastmod>2026-05-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
     </url>
+
     <url>
         <loc>https://theadis24.github.io/3D_Market/HouseHold.html</loc>
-        <priority>0.8</priority>
+        <lastmod>2026-05-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
     </url>
-    <url>
-        <loc>https://theadis24.github.io/3D_Market/Kontakt.html</loc>
-        <priority>0.8</priority>
-    </url>
+
     <url>
         <loc>https://theadis24.github.io/3D_Market/Learning.html</loc>
+        <lastmod>2026-05-05</lastmod>
+        <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
-    <url>
-        <loc>https://theadis24.github.io/3D_Market/Onas.html</loc>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://theadis24.github.io/3D_Market/Other.html</loc>
-        <priority>0.8</priority>
-    </url>
+
     <url>
         <loc>https://theadis24.github.io/3D_Market/Tools.html</loc>
-        <priority>0.8</priority>
+        <lastmod>2026-05-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
     </url>
+
+    <url>
+        <loc>https://theadis24.github.io/3D_Market/Other.html</loc>
+        <lastmod>2026-05-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://theadis24.github.io/3D_Market/Kontakt.html</loc>
+        <lastmod>2026-05-05</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://theadis24.github.io/3D_Market/Onas.html</loc>
+        <lastmod>2026-05-05</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
 </urlset>
