@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://theadis24.github.io/3D_Market/sitemap.xml
+Sitemap:https://theadis24.github.io/3D_Market/sitemap.xml
